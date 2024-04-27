@@ -1,8 +1,4 @@
-from Crowd_Detection.logger import logging
-from Crowd_Detection.exception import AppException
-import sys
+from Crowd_Detection.pipeline.training_pipeline import TrainPipeline
 
-try:
-    a=3 /'a'
-except Exception as e:
-    raise AppException(e, sys)
+obj=TrainPipeline()
+obj.run_pipeline()
