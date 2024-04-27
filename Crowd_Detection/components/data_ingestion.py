@@ -23,7 +23,7 @@ class DataIngestion:
         '''
 
         try: 
-            dataset_url = "https://drive.google.com/file/d/15oK8Uajyd-1Jpla6oXU51b0abiZAGHFn/view?usp=sharing"
+            dataset_url = self.data_ingestion_config.data_download_url
             zip_download_dir = self.data_ingestion_config.data_ingestion_dir
             os.makedirs(zip_download_dir, exist_ok=True)
             data_file_name = "data.zip"
